@@ -1,5 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 import { TranslocoService } from '@ngneat/transloco';
+import { getBrowserLang } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-language-change',
@@ -8,19 +10,17 @@ import { TranslocoService } from '@ngneat/transloco';
 })
 export class LanguageChangeComponent implements OnInit {
 
-  public currentLang="en";
-
   constructor(private translocoService: TranslocoService) { 
-
   }
 
   ngOnInit() {
+    console.log(getBrowserLang());
+    this.switchTo(getBrowserLang());
   }
 
   public switchTo(lang: string)
   {
     console.log(lang);
-    this.currentLang = lang;
     this.translocoService.setActiveLang(lang);
   }
 
