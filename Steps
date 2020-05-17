@@ -1,0 +1,15 @@
+add transloco  ng add @ngneat/transloco
+
+add bootstrap npm install bootstrap@3 jquery --save
+
+add the new component
+
+add the labels
+
+replace the all labels::
+
+Email address
+
+Password
+
+Submit
