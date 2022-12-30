@@ -13,7 +13,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
-    "@ngneat/transloco": "^2.17.1",
+    "@ngneat/transloco": "^2.23.5",
     "bootstrap": "^4.5.0",
     "core-js": "^2.5.4",
     "jquery": "^3.5.1",
